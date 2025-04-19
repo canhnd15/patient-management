@@ -6,7 +6,7 @@ import com.davidnguyen.patientservice.entity.Patient;
 import com.davidnguyen.patientservice.exception.EmailAlreadyExistsException;
 import com.davidnguyen.patientservice.grpc.BillingServiceGrpcClient;
 import com.davidnguyen.patientservice.repository.PatientRepository;
-import mapper.PatientMapper;
+import com.davidnguyen.patientservice.mapper.PatientMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package mapper;
+package com.davidnguyen.patientservice.mapper;
 
 import com.davidnguyen.patientservice.dto.PatientRequestDTO;
 import com.davidnguyen.patientservice.dto.PatientResponseDTO;
