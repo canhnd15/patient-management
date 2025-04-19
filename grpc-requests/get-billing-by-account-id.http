@@ -1,0 +1,6 @@
+GRPC localhost:9001/BillingService/GetBillingByAccountId
+
+{
+  "accountCode": "ADX134",
+  "amount": 1500
+}

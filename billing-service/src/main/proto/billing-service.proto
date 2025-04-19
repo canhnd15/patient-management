@@ -5,6 +5,7 @@ option java_package = "billing";
 
 service BillingService {
   rpc CreateBillingAccount (BillingRequest) returns (BillingResponse);
+  rpc GetBillingByAccountId (AccountInfoRequest) returns (BillingByAccountResponse);
 }
 
 message BillingRequest {
@@ -16,4 +17,16 @@ message BillingRequest {
 message BillingResponse {
   string accountId = 1;
   string status = 2;
+}
+
+message AccountInfoRequest {
+  string accountCode = 1;
+  int64 amount = 2;
+}
+
+message BillingByAccountResponse {
+  string accountId = 1;
+  string accountCode = 2;
+  string accountEmail = 3;
+  int64 balance = 4;
 }
